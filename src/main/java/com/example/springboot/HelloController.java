@@ -8,7 +8,7 @@ public class HelloController {
 
 	@RequestMapping("/")
 	public String index() {
-		return "Hello multi-cluster kapp action!";
+		return "Hello multi-cluster kapp action on my birthday!";
 	}
 
 }
