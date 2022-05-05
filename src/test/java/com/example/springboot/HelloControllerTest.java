@@ -21,11 +21,11 @@ class HelloControllerTest {
 
     @Test
     void index() throws Exception {
-        assertEquals("Hello multi-cluster kapp action again!", controller.index());
+        assertEquals("Hello multi-cluster kapp action!", controller.index());
 
         mockMvc
             .perform(get("/"))
             .andExpect(status().isOk())
-            .andExpect(content().string("Hello multi-cluster kapp action again!"));
+            .andExpect(content().string("Hello multi-cluster kapp action!"));
     }
 }
