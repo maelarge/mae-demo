@@ -10,6 +10,12 @@ spec:
   - name: annotations
     value:
       autoscaling.knative.dev/minScale: "1"
+  - name: gitops_ssh_secret
+    value: git-ssh
+  - name: gitops_repository
+    value: ssh://git@github.com/Mpluya/config-mck-demo.git
+  - name: gitops_branch
+    value: main
   source:
     git:
       url: https://github.com/Mpluya/mck-demo
